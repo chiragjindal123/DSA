@@ -1,0 +1,8 @@
+import streamlit as st
+import pandas as pd
+
+st.write("""
+# My first app
+Hello *world! """)
+df = pd . read_csv ( "/content/sample_data/california_housing_test.csv" )
+st.line_chart(df)
