@@ -1,9 +1,27 @@
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
-
+#include <bits/stdc++.h> 
+#include <complex>
+#include <queue>
+#include <set>
+#include <unordered_set>
+#include <list>
+#include <chrono>
+#include <random>
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <iomanip>
+#include <fstream>
+ 
 using namespace std;
+ 
 typedef long long ll;
 typedef long double ld;
 typedef pair<int,int> p32;
@@ -34,34 +52,40 @@ double eps = 1e-12;
 #define sz(x) ((ll)(x).size())
  
 
+
 void solve(){
-    string s;
-    cin>>s;
-    // ll arr[n];
+ll x,y;
+cin>>x>>y;
+ll ans=0;
 
-    // for(int i = 0;i<n;i++){
-    //     cin>>arr[i];
-    // }
-    // int j=0;
-    // int count=1;
-    int ans=INT_MIN;
-    for(int i=0;i<s.size();i++){
-        int j=i;
+if(y>x){
 
-        while(j < s.size()-1 && s[j]==s[j+1]){
-            j++;
-        }
-        ans=max(ans,j-i+1);
-        i=j;
-
+    if(y%2!=0){
+        ans=(y*y)-x+1;
+    }else{
+        ans=x+((y-1)*(y-1));
     }
-    cout<<ans;
+    cout<< ans<<endl;
+
+}else{
+    if(x%2!=0){
+        ans=y+((x-1)*(x-1));
+    }else{
+        ans=(x*x)-y+1;
+    }
+    cout<< ans<<endl;
+
+}
+
+
 }
 int main()
 {
  fast_cin();
-//  ll t;
-//  cin >> t;
- solve();
+ ll t;
+ cin >> t;
+ while(t--){
+    solve();
+ }
  return 0;
 }

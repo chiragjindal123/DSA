@@ -1,9 +1,27 @@
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
-
+#include <bits/stdc++.h> 
+#include <complex>
+#include <queue>
+#include <set>
+#include <unordered_set>
+#include <list>
+#include <chrono>
+#include <random>
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <iomanip>
+#include <fstream>
+ 
 using namespace std;
+ 
 typedef long long ll;
 typedef long double ld;
 typedef pair<int,int> p32;
@@ -35,33 +53,27 @@ double eps = 1e-12;
  
 
 void solve(){
-    string s;
-    cin>>s;
-    // ll arr[n];
-
-    // for(int i = 0;i<n;i++){
-    //     cin>>arr[i];
-    // }
-    // int j=0;
-    // int count=1;
-    int ans=INT_MIN;
-    for(int i=0;i<s.size();i++){
-        int j=i;
-
-        while(j < s.size()-1 && s[j]==s[j+1]){
-            j++;
-        }
-        ans=max(ans,j-i+1);
-        i=j;
-
+    int n;
+    cin>>n;
+    if(n<5){
+        cout<<0;
+        return;
+    
     }
-    cout<<ans;
+    ll ans=1;
+    for(int i=5;i<=n;i++){
+        ans*=i;
+    }
+    int count=0;
+    for(int i=5;i<=n;i*=5){
+        count+=n/i;
+    }
+    cout<<count;
 }
 int main()
 {
  fast_cin();
-//  ll t;
-//  cin >> t;
  solve();
+ 
  return 0;
 }

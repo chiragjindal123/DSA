@@ -1,9 +1,27 @@
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
-
+#include <bits/stdc++.h> 
+#include <complex>
+#include <queue>
+#include <set>
+#include <unordered_set>
+#include <list>
+#include <chrono>
+#include <random>
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+#include <string>
+#include <vector>
+#include <map>
+#include <unordered_map>
+#include <stack>
+#include <iomanip>
+#include <fstream>
+ 
 using namespace std;
+ 
 typedef long long ll;
 typedef long double ld;
 typedef pair<int,int> p32;
@@ -32,36 +50,23 @@ double eps = 1e-12;
 #define fast_cin() ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL)
 #define all(x) (x).begin(), (x).end()
 #define sz(x) ((ll)(x).size())
+#define int long long
  
 
 void solve(){
-    string s;
-    cin>>s;
-    // ll arr[n];
+    int n;
+    cin>>n;
 
-    // for(int i = 0;i<n;i++){
-    //     cin>>arr[i];
-    // }
-    // int j=0;
-    // int count=1;
-    int ans=INT_MIN;
-    for(int i=0;i<s.size();i++){
-        int j=i;
+    for(int i=1;i<=n;i++){
+        int totalways = ((i*i)*(i*i-1))/2;
+        int attackways= 4*(i-1)*(i-2);
 
-        while(j < s.size()-1 && s[j]==s[j+1]){
-            j++;
-        }
-        ans=max(ans,j-i+1);
-        i=j;
-
+        cout<<totalways-attackways<<endl;
     }
-    cout<<ans;
 }
-int main()
+int32_t main()
 {
  fast_cin();
-//  ll t;
-//  cin >> t;
  solve();
  return 0;
 }
