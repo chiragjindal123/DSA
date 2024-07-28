@@ -1,0 +1,1 @@
+{"name":"Local: mailbox","url":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\mailbox.cpp","tests":[{"id":1719916674148,"input":"4\n1 10\n1 100\n3 73\n5 100\n","output":"55\n5050\n382\n495\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\mailbox.cpp","group":"local","local":true}

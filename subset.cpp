@@ -34,4 +34,3 @@ int main()
 		cout << "No subset with given sum";
 	return 0;
 }
-// This code is contributed by shivanisinghss2110

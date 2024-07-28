@@ -1,0 +1,1 @@
+{"name":"Local: spiral","url":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\spiral.cpp","tests":[{"id":1709393815340,"input":"3\n2 3\n1 1\n4 2","output":"8\n1\n15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\spiral.cpp","group":"local","local":true}

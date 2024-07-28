@@ -1,0 +1,1 @@
+{"name":"Local: tiger","url":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\tiger.cpp","tests":[{"id":1716875667124,"input":"3\nHTH","output":"0"},{"id":1716875673546,"input":"9\nHTHTHTHHT","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\goluj\\OneDrive\\Desktop\\taiwan dsa\\tiger.cpp","group":"local","local":true}
