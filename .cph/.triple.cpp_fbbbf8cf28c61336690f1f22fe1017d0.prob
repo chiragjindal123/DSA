@@ -1,0 +1,1 @@
+{"name":"Local: triple","url":"c:\\Users\\goluj\\OneDrive\\Desktop\\DSA\\triple.cpp","tests":[{"id":1722957692035,"input":"4\n1 3\n2 4\n199999 200000\n19 84\n","output":"5\n6\n36\n263\n"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\goluj\\OneDrive\\Desktop\\DSA\\triple.cpp","group":"local","local":true}
